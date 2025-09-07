@@ -28,4 +28,35 @@ export const environmentalDataAPI = {
   }
 }
 
+// 日本の環境問題データ用の新しいAPI
+export const japanEnvironmentalAPI = {
+  getAirQuality(prefecture = 'Tokyo') {
+    return apiClient.get('/japan/air-quality', { params: { prefecture } })
+  },
+
+  getClimateData() {
+    return apiClient.get('/japan/climate')
+  },
+
+  getPollutionData() {
+    return apiClient.get('/japan/pollution')
+  },
+
+  getBiodiversityData() {
+    return apiClient.get('/japan/biodiversity')
+  },
+
+  getEnergyEmissions() {
+    return apiClient.get('/japan/energy-emissions')
+  },
+
+  getComprehensiveReport() {
+    return apiClient.get('/japan/comprehensive-report')
+  },
+
+  getEnvironmentalProblems() {
+    return apiClient.get('/japan/environmental-problems')
+  }
+}
+
 export default apiClient
