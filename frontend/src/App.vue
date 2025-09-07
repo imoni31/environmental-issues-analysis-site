@@ -8,6 +8,7 @@
         <li><router-link to="/">ホーム</router-link></li>
         <li><router-link to="/data">データ表示</router-link></li>
         <li><router-link to="/analysis">分析結果</router-link></li>
+        <li><router-link to="/japan">🇯🇵 日本の環境問題</router-link></li>
       </ul>
     </nav>
     <main class="main-content">

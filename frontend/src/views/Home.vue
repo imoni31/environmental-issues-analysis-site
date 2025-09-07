@@ -17,6 +17,12 @@
         <p>収集されたデータの統計情報とトレンド分析をグラフィカルに表示します</p>
         <router-link to="/analysis" class="btn">分析を見る</router-link>
       </div>
+
+      <div class="feature-card featured">
+        <h3>🇯🇵 日本の環境問題</h3>
+        <p>実際のデータに基づく日本の環境問題の現状分析。大気汚染、気候変動、生物多様性などの詳細データを表示</p>
+        <router-link to="/japan" class="btn btn-featured">日本の環境データを見る</router-link>
+      </div>
     </div>
     
     <div class="system-status" v-if="systemHealth">
@@ -115,6 +121,20 @@ export default {
 
 .btn:hover {
   background-color: #1e3a20;
+}
+
+.feature-card.featured {
+  border: 2px solid #2c5530;
+  background: linear-gradient(135deg, #f1f8e9, #ffffff);
+}
+
+.btn-featured {
+  background: linear-gradient(135deg, #43a047, #2c5530);
+  font-weight: bold;
+}
+
+.btn-featured:hover {
+  background: linear-gradient(135deg, #2c5530, #1b5e20);
 }
 
 .system-status {
